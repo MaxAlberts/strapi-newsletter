@@ -20,8 +20,8 @@ const HomePage = () => {
   const [hasSetup, setHasSetup] = React.useState(false);
   const [isLoading, setIsLoading] = React.useState(true);
 
-  React.useEffect(async () => {
-    const { data } = await getSetup();
+  React.useEffect(() => {
+    const { data } = getSetup();
 
     setHasSetup(data);
     setIsLoading(false);
